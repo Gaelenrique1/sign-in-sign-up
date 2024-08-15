@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+.header, #header {
+    background: rgba(201, 13, 13, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 3%;
+}
+
+.logo, img{
+    height: 120px;
+    width: auto;
+transition: 0.3s;
+}
+.logo:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.navigation{
+list-style-type: none;
+display: inline-flex;
+
+padding: 0 0 0 10px;
+}
+.navigation, a {
+    cursor: default;
+font-size: 21px;
+text-decoration: none;
+color: white;
+transition: 199ms;
+font-weight: 500;
+
+}
+
+.a-nav:hover {
+    font-weight: 500;
+color: #fffeef;
+    font-size: 22px;
+    border-bottom: solid thin #ffff;
+    transition: 0.3s;
+}
+
+.btn-nav {
+    color: #eeeeee;
+    text-align: center;
+    border-radius: 15px;
+    background: transparent;
+    cursor: pointer;
+    border: #ffff solid;
+    padding: 10px;
+    font-weight: 700;
+    transition:  background .3s ;
+}
+.btn-nav:hover {
+    color: black;
+border: #aa0000 solid 3px;
+    background: rgba(201, 13, 13, 0.3);
+    transition:  .5s background;
+}
+
+.card-niños{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  
+    padding: 10px;
+}
+.footer-card {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.img-card-niños {
+    width: 200px;
+    height: auto;
+}
+
+@media screen and (maxwidth: 636px) {
+    header {
+        scale: 0.7;
+    }
+}
